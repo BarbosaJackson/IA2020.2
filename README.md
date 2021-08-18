@@ -3,14 +3,9 @@
 Para executar o projeto, baixe as seguintes dependências:
 
 ```
-pip install ChatterBot
+sudo apt-get install python3-tk
 ```
 
 ```
-pip install ChatterBot-corpus
-```
-
-```
-pip install awscli==1.11.18
-
+pip install nltk
 ```
