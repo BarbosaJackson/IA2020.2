@@ -4,7 +4,9 @@ print("""Bem vindo ao nosso chatbot!
         Estamos aqui para ajudar você a encontrar um hotel.
         Para fazer isso iremos precisar coletar algumas informações suas!""")
 
-while(True):
+flag = True
+
+while(flag):
     min_price = float(input('Digite o preço minimo: '))
     while(not validate_field(min_price)):
         min_price = float(input('Digite o preço minimo: '))
@@ -33,4 +35,8 @@ while(True):
     while(not validate_field(city, True)):
         city = input('Digite a cidade: ')
 
-    
+    option = int(input("Deseja continuar? 1 - sim, 2 - não"))
+    if option == 1:
+        flag = True
+    else:
+        flag = False
