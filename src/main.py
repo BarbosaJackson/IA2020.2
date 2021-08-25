@@ -39,10 +39,13 @@ while(flag):
         city = input('Digite a cidade: ')
 
     valid_hotels = myjson.filter(hotelInformation.to_dict())
+
     print('\n===============================\n')
-    print(valid_hotels)
+    for i in valid_hotels:
+        print(i)
     print('\n===============================\n')
-    option = int(input("Deseja continuar? 1 - sim, 2 - não"))
+    option = int(input("Deseja continuar? 1 - sim, 2 - não\n"))
+    
     if option == 1:
         flag = True
     else:
