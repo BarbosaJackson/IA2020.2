@@ -41,8 +41,12 @@ while(flag):
     valid_hotels = myjson.filter(hotelInformation.to_dict())
 
     print('\n===============================\n')
-    for i in valid_hotels:
-        print(i)
+    if(len(valid_hotels)):
+        print("Hoteis recomendados: \n")
+        for i in valid_hotels:
+            print(i)
+    else: 
+        print("Não temos nenhum hotel que se enquadre nos parâmetros dados")
     print('\n===============================\n')
     option = int(input("Deseja continuar? 1 - sim, 2 - não\n"))
     
